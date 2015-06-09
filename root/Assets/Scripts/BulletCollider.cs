@@ -30,6 +30,11 @@ public class BulletCollider : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (ScoreManager.instance.Score == 32)
+        {
+            Application.LoadLevel("SI_Win");
+        }
+
     }
     void Awake()
     {

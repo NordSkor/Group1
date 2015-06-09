@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 100000, guid: a85fcbee9a86ed741bcf2f20b17c91e0, type: 2}
-  fireRate: .649999976
+  fireRate: 1.10000002
   nextFire: 0
   lives: 0
   lifetime: 2
@@ -967,7 +967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448874, guid: 3fb7092f1ec1ce54db1f773407568312, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14.8299999
+      value: 10.0100002
       objectReference: {fileID: 0}
     - target: {fileID: 448874, guid: 3fb7092f1ec1ce54db1f773407568312, type: 2}
       propertyPath: m_LocalPosition.y

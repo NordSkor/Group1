@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: a5cc3445e9d75da49bc094573b5717fd
-timeCreated: 1433457799
+timeCreated: 1433871977
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Invasion_cutscene_flow_0
+    21300002: Invasion_cutscene_flow_1
+    21300004: Invasion_cutscene_flow_2
+    21300006: Invasion_cutscene_flow_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,25 +34,65 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Invasion_cutscene_flow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2000
+        height: 2000
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 3, y: 0, z: 0, w: 0}
+    - name: Invasion_cutscene_flow_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1554
+        width: 389
+        height: 416
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Invasion_cutscene_flow_2
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 1554
+        width: 195
+        height: 414
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Invasion_cutscene_flow_3
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1027
+        width: 388
+        height: 415
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

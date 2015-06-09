@@ -27,7 +27,7 @@ function OnTriggerEnter(col : Collider)
         {
             GameObject.Destroy(col.gameObject);
             GameObject.Destroy(this.gameObject);
-            Application.LoadLevel("map_layout");
+            Application.LoadLevel("SI_Lose");
         }
     }
 
@@ -66,11 +66,11 @@ function OnTriggerEnter(col : Collider)
         controller.Move(movement * Time.deltaTime);
 
       //  print(GameObject.FindGameObjectsWithTag("Enemy").Length);
-        if(GameObject.FindGameObjectsWithTag("Enemy").Length==0)
+     /*   if(GameObject.FindGameObjectsWithTag("Enemy").Length == 1)
         {
-            Application.LoadLevel("map_layout");
+            Application.LoadLevel("SI_Win");
         }
-
+        */
         
 
     //print(GameObject.FindGameObjectsWithTag("Enemy"));
@@ -82,10 +82,10 @@ function OnTriggerEnter(col : Collider)
    
 
 
-    if (Input.GetKeyUp("space") && Time.time > nextFire)
+    if (Input.GetKeyUp("space") || Input.GetKeyUp("up") && Time.time > nextFire)
         {
             var spawn_bullet = Instantiate (bullet, transform.position, Quaternion.identity);
-            spawn_bullet.GetComponent.<Rigidbody>().AddForce(Vector3.up * 115);
+            spawn_bullet.GetComponent.<Rigidbody>().AddForce(Vector3.up * 155);//115
             nextFire = Time.time + fireRate;
             GetComponent.<AudioSource>().PlayOneShot(fire);
            // var clone = Instantiate (bullet, transform.position, transform.rotation);

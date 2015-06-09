@@ -215,6 +215,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fTimer: {fileID: 1277039033}
+  winLvl: FallingEnd
+  loseLvl: FallingLose
+  winScore: 15
+  usingTimer: 1
+  spaceGame: 0
 --- !u!1 &781396252
 GameObject:
   m_ObjectHideFlags: 0

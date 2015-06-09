@@ -30,7 +30,7 @@ public class ScoreManager : MonoBehaviour
         }
 
         if (spaceGame)
-         winScore = gameObject.GetComponent<SpawningEnemies>().numberOfEnemies - 1;
+         winScore = gameObject.GetComponent<SpawningEnemies>().numberOfEnemies;
     }
     
     //private score.
@@ -90,7 +90,7 @@ public class ScoreManager : MonoBehaviour
     public Timer fTimer;
     private static ScoreManager _instance;
     public string winLvl = "FallingEnd";
-    public string loseLvl = "Map_Layout";
+    public string loseLvl = "FallingLose";
     public int winScore = 15;
     public bool usingTimer = true;
     public bool spaceGame = false;

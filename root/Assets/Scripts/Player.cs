@@ -28,7 +28,6 @@ public class Player : MonoBehaviour
             //score -= 5;
             ScoreManager.instance.Score = score -= 5;
             print("Lost points");
-            audio1.Play();
             Destroy(collision.gameObject);
         }
         //If player collides with 'Good', score increases & good is destroyed

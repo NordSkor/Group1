@@ -14,7 +14,7 @@ public class EnemyBulletCollider : MonoBehaviour {
         {
             GameObject.Destroy(col.gameObject);
             GameObject.Destroy(this.gameObject);
-            Application.LoadLevel("map_layout");
+            Application.LoadLevel("SI_Lose");
         }
         else if (col.gameObject.tag == "bullet")
         {

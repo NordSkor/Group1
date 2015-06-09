@@ -20,6 +20,7 @@ public class EnemyShoot : MonoBehaviour
         {
             GameObject bu = Instantiate(bullet, this.transform.position, Quaternion.identity) as GameObject;
             bu.GetComponent<Rigidbody>().useGravity = true;
+            bu.GetComponent<Rigidbody>().AddForce(Vector3.down * 200);
             cooldown = Random.Range(minShootDelay, maxShootDelay);
         }
     }
